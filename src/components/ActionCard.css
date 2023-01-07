@@ -1,0 +1,85 @@
+.action-card{
+    position: absolute;
+    top: 200%;
+    height: 300px;
+    right: 30%;
+    width: 250px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action-items{
+    position: relative;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10px;
+}
+
+.action-display > p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(154, 154, 154);
+}
+.action-other-users{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-block: solid 1px rgb(217, 217, 217);;
+
+}
+
+.action-other-user{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    
+
+}
+
+.action-other-user > span{
+    font-size: 12px;
+}
+.action-signout{
+    margin: 20px;
+}
+.signout-button{
+    width: 90px;
+    height: 30px;
+    background-color: #D55151;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 16px ;
+    cursor: pointer;
+}
+.action-link{
+    text-decoration: none;
+    color: black;
+}
+.card-divider{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+}

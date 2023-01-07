@@ -1,0 +1,21 @@
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.action-center {
+  display: flex;
+  position: relative;
+  width: 28%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.avatar-button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .display-name-desktop {
+    display: none;
+  }
+}

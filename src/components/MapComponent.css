@@ -1,0 +1,19 @@
+.map-component{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+.map-component-error{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}

@@ -6,7 +6,7 @@ import { config } from "../App";
 import UsersCard from "../components/UsersCard";
 
 
-function LandingPage() {
+const LandingPage = () => {
   let [usersList, setUsersList] = useState([]);
 
   let getUsers = async () => {

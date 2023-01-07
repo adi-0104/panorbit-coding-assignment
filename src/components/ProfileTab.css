@@ -1,0 +1,131 @@
+.personal-details {
+  height: 45vh;
+  background-color: #fff;
+  padding-block: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: solid 1px rgb(217, 217, 217);
+}
+.display-center {
+  align-self: center;
+  margin-bottom: 4px;
+}
+
+.company-details {
+  height: 28vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-block: 10px;
+}
+
+.address-details {
+  height: 73vh;
+  background-color: #fff;
+  padding-block: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.vertical-ruler {
+  width: 5px;
+}
+
+.left-section {
+  padding-right: 10px;
+  border-right: solid 1px rgb(217, 217, 217);
+}
+.item-box {
+  width: 95%;
+  padding: 0.4rem;
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+}
+.item-label {
+  display: inline-block;
+  width: 100px;
+  text-align: end;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 2px;
+  color: rgb(154, 154, 154);
+}
+
+.item {
+  display: inline-block;
+  width: 180px;
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: bold;
+  color: rgb(84, 84, 84);
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(154, 154, 154);
+  font-weight: 500;
+}
+.display-center > p {
+  font-weight: bold;
+  color: rgb(84, 84, 84);
+}
+
+.display-left {
+  align-self: flex-start;
+  padding-left: 10px;
+}
+
+.address-items {
+  align-self: flex-start;
+}
+
+.item-box-address {
+  width: 95%;
+  padding: 0.4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.map-wrapper {
+  width: 100%;
+  padding-block: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.map-geostats {
+  display: flex;
+  justify-content: flex-end;
+  padding-inline: 10px;
+  width: 80%;
+}
+
+.geo-label {
+  text-align: end;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 2px;
+  margin-left: 10px;
+}
+
+.geo-value {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .left-section {
+    border-right: none;
+  }
+  .company-details {
+    border-bottom: solid 1px rgb(217, 217, 217);
+  }
+}

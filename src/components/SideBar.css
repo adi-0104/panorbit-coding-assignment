@@ -1,0 +1,83 @@
+.side-menu-desktop{
+    position: relative;
+    width: 18vw;
+    height: 80vh;
+    background: linear-gradient(0,#6741ca, #395cc8);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.menu-items {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 50%;
+    width: 90%;
+}
+.menu-item{
+    position: relative;
+    font-weight: 400;
+    width: 80%;
+    padding-block: 1rem;
+    border-bottom: thin solid #BCC5D4;
+    list-style: none;
+    border-bottom: 60% ;
+}
+
+.menu-item-active{
+    position: relative;
+    font-weight: 400;
+    width: 80%;
+    padding-block: 1rem;
+    border-bottom: thin solid #BCC5D4;
+    list-style: none;
+    border-bottom: 60% ;
+}
+
+.menu-item-active::after{
+    position: absolute;
+    top: 24%;
+    right: -30%;
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    border-radius: 25px 0px 0px 25px; 
+    content: url("../assets/icons8-forward-24.png");
+    text-align: center;
+}
+
+.menu-link{
+    width: 100%;
+    color: #BCC5D4;
+    text-decoration: none;
+}
+
+
+.menu-item:hover::after{
+    position: absolute;
+    top: 24%;
+    right: -30%;
+    width: 40px;
+    height: 30px;
+    border-radius: 25px 0px 0px 25px; 
+    content: url("../assets/icons8-forward-24.png");
+    text-align: center;
+
+}
+
+.menu-link-active{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .side-menu-desktop{
+        display: none;
+    }
+    
+}

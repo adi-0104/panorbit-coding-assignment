@@ -52,6 +52,14 @@
     list-style-type: none;
 }
 
+.link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #545454;
+    
+}
+
 .card-footer{
     position: relative;
     height: 5%;
@@ -59,8 +67,6 @@
 
 
 .user-item{
-    display: flex;
-    align-items: center;
     padding: 7px;
     border-bottom: thin solid rgb(227,227,227);
 }

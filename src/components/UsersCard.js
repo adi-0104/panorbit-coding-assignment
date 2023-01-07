@@ -1,19 +1,10 @@
 import React from 'react';
 import "./UsersCard.css";
-import stringToColor from "../utilities/stringToColor";
 import Avatar from "@mui/material/Avatar";
+import stringAvatar from './StringAvatar';
+import { Link } from 'react-router-dom';
+import { Typography } from '@mui/material';
 
-function stringAvatar(name) {
-    return {
-      sx: {
-        bgcolor: stringToColor(name),
-        width: 30,
-        height: 30,
-        mr: 1
-      },
-      children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
-    };
-  }
 
 function UsersCard({usersList}) {
   return (
@@ -25,8 +16,11 @@ function UsersCard({usersList}) {
           <ul>
             {usersList.map((user) => (
                 <li className="user-item" key={user.id}>
-                    <Avatar {...stringAvatar(`${user.name}`)} />
-                    <p className="user-name">{user.name}</p>
+                    <Link className="link" to="/user/profile" state={{userData: user,usersList: usersList}}>
+                        <Avatar {...stringAvatar(`${user.name}`)} />
+                        <Typography className="user-name">{user.name}</Typography>
+                    </Link>
+                    
                 </li>
             ))}
           </ul>
