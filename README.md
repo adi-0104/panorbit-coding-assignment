@@ -2,18 +2,20 @@
 
 
 
-## Project Set Up
+## Project Notes
 
+### Setup
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Hence to start this project: Please run `npm start`;
 
-## Enable Google Map API
+### Enable Google Map API
 
 1. Enable Google Maps JS API in in your personal/company g-cloud account
 2. From Credentials Copy the API Key
 3. create a .env.local file in your root folder
 4. use variable REACT_APP_GMAPS_API_KEY = "YOUR-API-KEY"
+
 
 ## Available Scripts
 
