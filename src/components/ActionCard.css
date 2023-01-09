@@ -52,7 +52,8 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 10px;
+    padding-block: 10px;
+    gap: 8px;
     
 
 }

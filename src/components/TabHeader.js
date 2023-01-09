@@ -31,7 +31,8 @@ const TabHeader = ({ heading, userData, usersList }) => {
       <h3>{heading}</h3>
       <Box ref={actionCardRef} className="action-center">
         <Avatar
-          {...stringAvatar(`${userData.name}`)}
+          src={`${userData.profilepicture}`}
+          sx={{width: 28, height: 28}}
           onClick={() => setShowActionCard(!showActionCard)}
           className="avatar-button"
         />

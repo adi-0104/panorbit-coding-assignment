@@ -17,7 +17,7 @@ function UsersCard({usersList}) {
             {usersList.map((user) => (
                 <li className="user-item" key={user.id}>
                     <Link className="link" to="/user/profile" state={{userData: user,usersList: usersList}}>
-                        <Avatar {...stringAvatar(`${user.name}`)} />
+                        <Avatar  src={`${user.profilepicture}`} sx={{width: 28, height: 28, mr: 1}}/>
                         <Typography className="user-name">{user.name}</Typography>
                     </Link>
                     

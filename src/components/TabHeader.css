@@ -6,9 +6,9 @@
 .action-center {
   display: flex;
   position: relative;
-  width: 28%;
-  justify-content: space-evenly;
+  width: 25%;
   align-items: center;
+  gap: 8px;
 }
 .avatar-button {
   cursor: pointer;
@@ -17,5 +17,8 @@
 @media screen and (max-width: 900px) {
   .display-name-desktop {
     display: none;
+  }
+  .action-center{
+    justify-content: center;
   }
 }

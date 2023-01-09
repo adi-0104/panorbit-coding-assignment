@@ -1,0 +1,15 @@
+.userpage-container{
+    display: flex !important;
+    justify-content: center!important;
+    align-items: center!important;
+    margin-block: 32px!important;
+    gap: 20px!important;
+    /* flexWrap: "wrap" */
+}
+
+@media screen and (max-width: 900px) {
+    .userpage-container{
+        flex-wrap: wrap !important;
+    }
+    
+}

@@ -15,21 +15,21 @@ const ActionCard = ({ userData, usersList }) => {
     <Box className="action-card">
       <Box className="action-items">
         <Box className="action-display">
-          <Avatar sx={{ height: 70, width: 70, mb: 1 }} />
+        <Avatar src={`${userData.profilepicture}`} sx={{ height: 70, width: 70, mb: 1 }} />
           <h4>{userData.name}</h4>
           <p>{userData.email}</p>
         </Box>
         <Box className="action-other-users">
           <Link className="action-link" to="/user/profile" state={{userData:userTwo,usersList: usersList}}>
             <Box className="action-other-user">
-              <Avatar {...stringAvatar(`${userTwo.name}`, 27, 27)} />
+              <Avatar src={`${userTwo.profilepicture}`} sx={{width: 28, height: 28}}/>
               <span>{userTwo.name}</span>
             </Box>
           </Link>
           <hr className="card-divider" />
           <Link className="action-link" to="/user/profile" state={{userData:userThree,usersList: usersList}}>
             <Box className="action-other-user">
-              <Avatar {...stringAvatar(`${userThree.name}`, 27, 27)} />
+              <Avatar src={`${userThree.profilepicture}`} sx={{width: 28, height: 28}}/>
               <span>{userThree.name}</span>
             </Box>
           </Link>

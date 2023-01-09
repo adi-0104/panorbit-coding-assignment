@@ -5,12 +5,12 @@ import "./ProfileTab.css";
 
 const ProfileTab = ({ userData }) => {
   return (
-    <Grid container spacing={1} sx={{ mt: 0.8 }}>
+    <Grid container spacing={2.5} sx={{ mt: 0.8 }}>
       <Grid item xs={12} sm={12} md={5}>
         <Box className="left-section">
           <Box className="personal-details">
             <Box className="display-center">
-              <Avatar sx={{ width: 160, height: 160, mb: 1 }} />
+              <Avatar src={`${userData.profilepicture}`} sx={{ width: 180, height: 180, mb: 1 }} />
               <p className="section-title">{userData.name}</p>
             </Box>
             <Box>

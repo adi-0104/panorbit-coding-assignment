@@ -1,7 +1,7 @@
 .side-menu-desktop{
     position: relative;
     width: 18vw;
-    height: 80vh;
+    height: 90vh;
     background: linear-gradient(0,#6741ca, #395cc8);
     border-radius: 20px;
     display: flex;
@@ -17,6 +17,9 @@
     transform: translate(0,-50%);
     height: 50%;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .menu-item{
     position: relative;
@@ -77,6 +80,49 @@
 
 @media screen and (max-width: 900px) {
     .side-menu-desktop{
+        /* display: none; */
+        position: relative;
+        width: 90%;
+        height: 10vh;
+        background: linear-gradient(0,#6741ca, #395cc8);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1.5rem;
+    }
+
+    .menu-items {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu-item{
+        position: relative;
+        font-weight: 400;
+        width: 50%;
+        padding-block: 0.5rem;
+        border-bottom: none;
+    }
+    .menu-link:hover{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu-item:hover::after{
+        display: none;
+    }
+    .menu-item-active{
+        position: relative;
+        font-weight: 400;
+        width: 50%;
+        padding-block: 0.5rem;
+        border: none;
+        list-style: none;
+    }
+    .menu-item-active::after{
         display: none;
     }
     
