@@ -2,6 +2,7 @@
     position: relative;
     width: 18vw;
     height: 90vh;
+    /* max-height: 900px; */
     background: linear-gradient(0,#6741ca, #395cc8);
     border-radius: 20px;
     display: flex;
@@ -105,6 +106,10 @@
         width: 50%;
         padding-block: 0.5rem;
         border-bottom: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .menu-link:hover{
         color: white;
@@ -121,6 +126,10 @@
         padding-block: 0.5rem;
         border: none;
         list-style: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .menu-item-active::after{
         display: none;

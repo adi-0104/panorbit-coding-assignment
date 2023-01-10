@@ -1,6 +1,7 @@
 import {Box, Divider } from '@mui/material';
 import React from 'react'
 import { useLocation } from 'react-router-dom';
+import ChatComponent from '../../components/ChatComponent';
 import PlaceHolder from '../../components/PlaceHolder';
 import ProfileTab from '../../components/ProfileTab';
 import TabHeader from '../../components/TabHeader';
@@ -17,6 +18,7 @@ function ToDo() {
         <Box maxWidth="lg" className='tab-content'>
           <PlaceHolder />
         </Box>
+        <ChatComponent usersList={usersList}/>
       </Box>
   )
 }

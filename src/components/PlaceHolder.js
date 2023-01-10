@@ -1,10 +1,13 @@
-import { Box } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import React from 'react'
 import "./PlaceHolder.css"
 
 const PlaceHolder = () => {
   return (
-    <Box className='message-wrapper'><p>Coming Soon</p></Box>
+    <Grid container spacing={2.5} sx={{ mt: 0.8 }}>
+        <Grid item className='message-wrapper'><p>Coming Soon</p></Grid>
+    </Grid>
+    
   )
 }
 

@@ -3,6 +3,16 @@
   justify-content: space-between;
   align-items: center;
 }
+.tab-header > h3 {
+  font-size: 24px;
+    font-weight: 600;
+    color: #545454;
+}
+.display-name-desktop {
+  font-size: 20px;
+  font-weight: 300;
+  color: #545454;
+}
 .action-center {
   display: flex;
   position: relative;

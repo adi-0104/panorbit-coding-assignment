@@ -15,7 +15,7 @@ const ProfileTab = ({ userData }) => {
             </Box>
             <Box>
               <Box className="item-box">
-                <label className="item-label">UserName :</label>
+                <label className="item-label">Username :</label>
                 <span
                   className="item"
                   variant="span"

@@ -1,0 +1,205 @@
+.chat-list-closed{
+    position: absolute;
+    /* check width */
+    width: 200px;
+    height: 40px;
+    bottom: 0;
+    right: 5%;
+    border-radius: 8px 8px 0 0;
+}
+.chat-list-open{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    bottom: 0;
+    right: 5%;
+    border: solid 1px #2C65C8;
+    border-block: none;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.header-content{
+    background-color: #2C65C8;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    /* position: relative; */
+    color: white;
+}
+.header-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    width: 80%;
+    gap: 6px;
+}
+.chat-list-box{
+    height: 280px;
+    background-color: white;
+    width: 98%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    padding-right: 5px;
+    /* margin-right: 5px; */
+}
+.chat-list-box::-webkit-scrollbar {
+    width: 6px;
+    height: auto;
+    padding-right: 10px;
+}
+.chat-list-box::-webkit-scrollbar-track {
+    background: white;
+    margin-block: 0.5em;
+}
+.chat-list-box::-webkit-scrollbar-thumb {
+    background: rgb(216,216,216);
+    border-radius: 0.5em;
+}
+.chat-list-box > ul{
+    list-style-type: none;
+    width: 95%;
+    padding-left: 8px;
+}
+.chat-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    cursor: pointer;
+    
+    
+}
+
+.display-friend{
+    display: flex;
+    align-items: center;
+}
+.display-friend-name{
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+.user-status{
+    
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+.status-online{
+    background-color: #1FA755;
+}
+.status-offline{
+    background-color: #d5d5d5;
+}
+.individual-chat-box{
+    position: absolute;
+    cursor:default;
+    width: 200px;
+    height: 280px;
+    bottom: 0;
+    right: 210px;
+    transition: height 0.5s ;
+    border-radius: 8px 8px 0 0;
+    border: solid 1px #2C65C8;
+    border-block: none;
+    background-color: white;
+}
+
+.individual-chat-header{
+    background-color: #2C65C8;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    color: white;
+
+}
+.individualchat-header-display{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+}
+.individualchat-header-display > p{
+    font-size: 12px;
+}
+.individualchat-header-actions{
+    width: 20%;
+    display: flex;
+    gap: 4px;
+}
+.action-icon{
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.conversation-container{
+    height: 200px;
+    width: 98%;
+    /* padding-right: 5px; */
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.conversation-container::-webkit-scrollbar {
+    width: 6px;
+    height: auto;
+}
+.conversation-container::-webkit-scrollbar-track {
+    background: white;
+    margin-block: 0.5em;
+}
+.conversation-container::-webkit-scrollbar-thumb {
+    background: rgb(216,216,216);
+    border-radius: 0.5em;
+}
+
+.MuiInputBase-root{
+    padding-right: 5px !important;
+    border-bottom: none !important;
+    
+}
+#outlined-message-input{
+    width: 100% !important;
+    height: 40px !important;
+    padding: 0 !important;
+    padding-left: 5px !important;
+    border: solid 0 1px 0 0 #2C65C8 !important;
+    border-bottom: none !important;
+}
+
+.send-message-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .individual-chat-box{
+        position: absolute;
+        width: 200px;
+        height: 280px;
+        bottom: 0;
+        right: 20%;
+        transition: height 0.5s ;
+        border-radius: 8px 8px 0 0;
+        border: solid 1px #2C65C8;
+        border-block: none;
+        background-color: white;
+    }
+}

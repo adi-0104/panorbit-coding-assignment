@@ -9,18 +9,14 @@
 
 .main-content{
     padding-left: 30px;
-    /* padding-block: 20px; */
-    /* padding-top: 2rem; */
+    padding-bottom: 40px;
     width: 80vw;
-    height: 85vh;
     position: relative;
 }
 
 .tab-content{
     position: relative;
     height: 100%;
-    /* display: flex; */
-    /* background-color: black; */
 }
 
 

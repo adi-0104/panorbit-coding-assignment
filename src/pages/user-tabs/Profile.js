@@ -1,9 +1,10 @@
-import {Box, Divider } from '@mui/material';
 import React from 'react'
+import {Box, Divider } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 import ProfileTab from '../../components/ProfileTab';
 import TabHeader from '../../components/TabHeader';
 import "./Profile.css"
+import ChatComponent from '../../components/ChatComponent';
 
 const Profile = () => {
 
@@ -16,7 +17,7 @@ const Profile = () => {
         <Box maxWidth="lg" className='tab-content'>
           <ProfileTab userData={userData}/>
         </Box>
-
+        <ChatComponent usersList={usersList}/>
       </Box>
   )
 }

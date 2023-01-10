@@ -26,13 +26,17 @@ const TabHeader = ({ heading, userData, usersList }) => {
   let [showActionCard, setShowActionCard] = useState(false);
   let actionCardRef = useClickOutside(() => setShowActionCard(false));
 
+  useEffect(() => {
+    setShowActionCard(false);
+  },[userData])
+
   return (
     <Box className="tab-header">
       <h3>{heading}</h3>
       <Box ref={actionCardRef} className="action-center">
         <Avatar
           src={`${userData.profilepicture}`}
-          sx={{width: 28, height: 28}}
+          sx={{width: 30, height: 30}}
           onClick={() => setShowActionCard(!showActionCard)}
           className="avatar-button"
         />
